@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMIC RESUME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="resumebuilder"><u>DYNAMIC RESUME</u></h1>
+
+        
+        <form id="resumeForm">
+            <h2 id="Personals">Personal Information</h2>
+            <label for="name" id="Name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="email" id="Email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="phone" id="Phone">Phone:</label>
+            <input type="tel" id="phone" required><br>
+
+            <label for="profile-pic" id="Profile">Profile Picture (URL):</label>
+            <input type="text" id="profile-pic"><br>
+
+            <h2 id="Educations">Education</h2>
+            <label for="education" id="Education">Education:</label>
+            <textarea id="education" rows="3" required></textarea><br>
+
+            <h2 id="Skills">Skills</h2>
+            <label for="skills" id="Skill">Skills (comma-separated):</label>
+            <input type="text" id="skills" required><br>
+
+            <h2 id="Works">Work Experience</h2>
+            <label for="work" id="Work">Work Experience:</label>
+            <textarea id="work" rows="3" required></textarea><br>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- The area where the generated resume will be displayed -->
+        <div id="resumeDisplay"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
